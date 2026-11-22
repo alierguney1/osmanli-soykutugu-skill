@@ -10,7 +10,7 @@ description: >-
 
 # Devlet Arşivleri Soy Kütüğü, Paleografik Doğrulama ve Köy Tarihi Becerisi
 
-Bu beceri, **e-Devlet Alt-Üst Soy Bilgisi** belgesindeki kayıt sınırını ("Kütük Duvarı", 1881–1905) aşarak **T.C. Cumhurbaşkanlığı Devlet Arşivleri Başkanlığı Kataloğu** (`https://katalog.devletarsivleri.gov.tr`) ve indirilen filigransız defter görüntüleri üzerinden **anne ve baba tarafı soy kütüğünü**, **köyün eski adını ve idari evrimini** 16. yüzyıla kadar **koordinatlı kırpıntı kanıtıyla** araştırır.
+Bu beceri, **e-Devlet Alt-Üst Soy Bilgisi** belgesindeki kayıt sınırını ("Kütük Duvarı", 1881–1905) aşarak **T.C. Cumhurbaşkanlığı Devlet Arşivleri Başkanlığı Kataloğu** (`https://katalog.devletarsivleri.gov.tr`) ve indirilen filigransız defter görüntüleri üzerinden **anne ve baba tarafı soy kütüğünü**, **köyün eski adını ve idari evrimini** 16. yüzyıla kadar **koordinatlı kırpıntı kanıtıyla** araştırır. *(Said Sürücü semineri ve [`shnfatih-hash/devlet-arsivleri-soykutugu`](https://github.com/shnfatih-hash/devlet-arsivleri-soykutugu) temel alınarak kırpıntı proofread ve `d1.2-ultra` doğrulama hattıyla genişletilmiştir.)*
 
 > **Öncelik Kuralı:** Çalışılan depoda projeye özgü bir ajan talimat dosyası (`CLAUDE.md` / `AGENTS.md`) varsa, projeye özel dosya yolları ve kurallar bu becerinin üzerine çıkar.
 

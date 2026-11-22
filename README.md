@@ -2,14 +2,16 @@
 
 > **e-Devlet Alt-Üst Soy Bilgisi** belgeniz 1840–1905 bandında kesiliyor mu?  
 > Bu açık kaynaklı **Agent Skill** paketi, şifrenizi hiçbir yere vermeden **T.C. Cumhurbaşkanlığı Devlet Arşivleri Başkanlığı Kataloğu** ve indirdiğiniz orijinal Osmanlıca defter görüntüleri üzerinden **anne ve baba tarafı soy kütüğünüzü** ve **köyünüzün 500 yıllık tarihini** **kalıcı koordinatlı kırpıntılar, yan yana HTML doğrulama (proofread), sıkı kanıt disiplini ve isteğe bağlı kalibre Decision Model (`d1.2-ultra`) triyajıyla** 1500'lere kadar indirmenizi sağlar.
+>
+> **Kaynak ve İlham:** Bu çalışma, **Said Sürücü**'nün seminerinden hareketle geliştirilen açık kaynaklı [**`shnfatih-hash/devlet-arsivleri-soykutugu`**](https://github.com/shnfatih-hash/devlet-arsivleri-soykutugu) becerisini temel alır; onun geniş arşiv rehberliği ve canlı katalog (`dab_helpers.js`) altyapısını, kendi çok-turlu arşiv araştırmamızda geliştirdiğimiz **kalıcı kırpıntı CSV + HTML proofread, `A/B/C/D` kanıt disiplini, yapısal kişi dizini ve kalibre `d1.2-ultra` doğrulama pipeline'ıyla** birleştirip ileri taşır.
 
 ---
 
 ## Bu Skill Neden Farklı?
 
-Bu paket, geniş kapsamlı Osmanlı arşiv rehberliğini **30 turluk gerçek bir arşiv araştırmasında sahada doğrulanmış veri mühendisliği pipeline'ıyla** birleştirir:
+Bu paket, [**`shnfatih-hash/devlet-arsivleri-soykutugu`**](https://github.com/shnfatih-hash/devlet-arsivleri-soykutugu) projesinin geniş kapsamlı Osmanlı arşiv rehberliğini **30 turluk gerçek bir arşiv araştırmasında sahada doğrulanmış veri mühendisliği pipeline'ıyla** birleştirir:
 
-1. **500 Yıllık Geniş Arşiv Merdiveni & Canlı Katalog Keşfi** *(Said Sürücü semineri & `shnfatih-hash/devlet-arsivleri-soykutugu` temeli)*: `1450–1925` arası tam fon haritası (`NFS.d`, `ML.VRD.TMT.d`, `A.{RSK.d`, `MŞH.ŞSC.d`, `MAD.d`, `TT.d`, `EV.d`, `BCA`, `MSB`), Göçmen/Mübadil rehberi ve Chrome DevTools MCP için WAF-korumalı (`≥ 1800 ms`, `HTTP 418`) canlı katalog/fihrist aracı ([scripts/dab_helpers.js](./scripts/dab_helpers.js)).
+1. **500 Yıllık Geniş Arşiv Merdiveni & Canlı Katalog Keşfi** *(temel: **Said Sürücü** semineri & [**`shnfatih-hash/devlet-arsivleri-soykutugu`**](https://github.com/shnfatih-hash/devlet-arsivleri-soykutugu))*: `1450–1925` arası tam fon haritası (`NFS.d`, `ML.VRD.TMT.d`, `A.{RSK.d`, `MŞH.ŞSC.d`, `MAD.d`, `TT.d`, `EV.d`, `BCA`, `MSB`), Göçmen/Mübadil rehberi ve Chrome DevTools MCP için WAF-korumalı (`≥ 1800 ms`, `HTTP 418`) canlı katalog/fihrist aracı ([scripts/dab_helpers.js](./scripts/dab_helpers.js)).
 2. **Sıfır-Uydurma Kanıt Disiplini (`A / B / C / D` + `[SÜLALE İZİ]`):** Orijinal görüntüde koordinatlı kırpıntısı bulunmayan hiçbir okuma `B` ve üstüne dayanak yapılamaz; emin olunmayan her harf/rakam `[?]` ile, her düzeltme `~~eski~~ **yeni**` iziyle kaydedilir; 16.–17. yy. tahrir kayıtları kan bağı değil `[SÜLALE İZİ]` sayılır.
 3. **Kalıcı Koordinat CSV + Kırmızı Kutu Önizleme (`preview`) + Filtreli Yan Yana HTML Proofread ([scripts/crop_and_verify.py](./scripts/crop_and_verify.py)):** Tek seferlik kesitler yerine her kaydın ve şüpheli kelimenin kalıcı piksel koordinatı tutulur ve tek komutla filtreli HTML doğrulama sayfası üretilir.
 4. **Saha Keşifleri:** `icmal` (isimsiz) defter elemesi, yoklama defterlerindeki `Hâne/Numro` esas-defter köprüsü, `Kütük ≠ biyolojik` kuralı, homonim (eş-adlı) köy ayrımı, Doğu Arapça el yazısı rakam (`٢/٣/٤/٥/٦`) kalibrasyon tuzakları ve çok oturumlu `[CLAIM]` protokolü.
@@ -197,7 +199,8 @@ osmanli-soykutugu-skill/
 
 ---
 
-## Teşekkür, Atıf ve Lisans
+## Atıf, Kaynak Proje ve Lisans
 
-- Bu beceri, **Said Sürücü**'nün seminerinden hareketle geliştirilen ve MIT lisansı altında paylaşılan [`shnfatih-hash/devlet-arsivleri-soykutugu`](https://github.com/shnfatih-hash/devlet-arsivleri-soykutugu) becerisi temel alınarak; gerçek çok-turlu arşiv araştırmasında geliştirilen **kalıcı koordinatlı kırpıntı CSV + yan yana HTML proofread, `A/B/C/D` kanıt disiplini, harf/rakam `[?]` izleme, yoklama `Hâne/Numro` köprüleme, yapısal kişi dizini, homonim/coğrafi ayrım ve kalibre `d1.2-ultra` doğrulama hattıyla** birleştirilip genişletilmiştir.
+- **Kaynak Proje (`devlet-arsivleri-soykutugu`):** Bu beceri, MIT lisansı altında açık kaynak olarak paylaşılan [**`shnfatih-hash/devlet-arsivleri-soykutugu`**](https://github.com/shnfatih-hash/devlet-arsivleri-soykutugu) reposu temel alınarak ve onun üzerine inşa edilerek geliştirilmiştir. `scripts/dab_helpers.js`, `references/gocmen-ve-mubadil-rehberi.md`, temel `references/fon-kodlari-ve-paleografya-rehberi.md` çerçevesi ve `scripts/crop_and_verify.py`'nin `inventory/split/crop` çekirdeği o projeden alınmış; üzerine kendi saha araştırmamızda geliştirdiğimiz **kalıcı koordinatlı kırpıntı CSV + yan yana HTML proofread (`preview/proofread`), `A/B/C/D` kanıt disiplini, harf/rakam `[?]` izleme, yoklama `Hâne/Numro` köprüleme, yapısal kişi dizini, homonim/coğrafi ayrım ve kalibre `d1.2-ultra` doğrulama hattı (`scripts/verify_d1.py` + `benchmarks/`)** eklenmiştir.
+- **İlham Kaynağı:** Yapay zekâ destekli Osmanlı arşiv ve soy kütüğü araştırmalarına öncülük eden semineri için **Said Sürücü**'ye teşekkür ederiz.
 - **Lisans:** [MIT Lisansı](./LICENSE) — özgürce kullanılabilir, uyarlanabilir ve paylaşılabilir.
